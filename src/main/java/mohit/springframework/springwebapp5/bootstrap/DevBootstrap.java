@@ -49,7 +49,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent>{
 		publisherRepository.save(obj1);
 		
 		Author garg=new Author("Mr" , "Garg");
-		Book ds=new Book("Data Structure and Algorithms","2345",obj);
+		Book ds=new Book("Data Structure and Algorithms","2345",obj1);
 		garg.getBooks().add(ds);
 		
 		authorRepository.save(garg);
